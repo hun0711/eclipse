@@ -1,0 +1,27 @@
+package com.test;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Test팩토리얼 {
+/*
+ * 문제
+ * 0보다 크거나 같은 정수 N이 주어진다. 이때, N!을 출력하는 프로그램을 작성하시오.
+ * 입력
+ * 첫째 줄에 정수 N(0 ≤ N ≤ 12)이 주어진다.
+ * 출력
+ * 첫째 줄에 N!을 출력한다.
+ */
+	public static void main(String[] args) throws NumberFormatException, IOException {
+     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+     int N = Integer.parseInt(br.readLine());
+     
+     int factorial = 1;
+	 for(int i = 1; i <= N; i++) {
+		 factorial = factorial * i;
+	 }
+	 System.out.println(factorial);
+	}
+
+}
